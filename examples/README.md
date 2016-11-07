@@ -68,6 +68,7 @@ The following example is based upon the documentation that is found on the symfo
             </ol>
         </li>
         <li><strong>Example using Twig Templating:</strong><br/>
+        The second method/"controller" here, twig_numberAction() is the focus here. We are going to create a new "controller" that uses the twig, $this->render() method.<br/>
             <img src="https://github.com/generhim/symfony-31-by-Example/blob/master/examples/notes/LuckyController_twigExample.png?raw=true" /><br/>
             <ol>
                     <li><strong>Checklist</strong>
