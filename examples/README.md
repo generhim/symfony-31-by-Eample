@@ -102,7 +102,8 @@ The following example is based upon the documentation that is found on the symfo
                 </li>
                 <li><strong>Symfony functionality derives from "bundles." All plugins for Symfony are bundles.</strong></li>
                 <li><strong>Bundles are registered in the {name_of_your_app}/app/AppKernel.php.</strong> Instances of each bundle is instantiated and available from the $bundles array created in the AppKernel.php.</li>
-                <li><strong></strong></li>
+                <li><strong>The bundles give you more "tools" a.k.a. services... </strong></li>
+                <li><strong>Configurations for bundle behavior is saved in app/config/config.yml</strong></li>
             </ol>
         </li>
     </ol>
@@ -111,17 +112,48 @@ The following example is based upon the documentation that is found on the symfo
 
 <li><h2>Routing</h2>
 [<a href="http://symfony.com/doc/current/routing.html" target="_blank">Doc Link</a>]
+<ol>
+    <li><strong>Highlights of Routes</strong><br/>
+    <ol>
+        <li>Create complex routes that map to controllers</li>
+        <li>Generate URLs inside templates and controllers</li>
+        <li>Load routing resources from bundles (or anywhere else)</li>
+        <li>Debug your routes</li>
+    </ol>
+    </li>
+    <li><strong>Routing Example 1 </strong>
+        <ol>
+            <li><img src=""/></li>
+            <li></li>
+        </ol>
+    </li>
+</ol>
+</li>
+
+
+<li><h2>Controllers</h2>
+[<a href="http://symfony.com/doc/current/controller.html" target="_blank">Doc Link</a>]
     <ol>
         <li></li>
     </ol>
 </li>
 
 
-<li><h2>Creating Pages</h2>
-[<a href="http://symfony.com/doc/current/page_creation.html" target="_blank">Doc Link</a>]
+<li><h2>Templates</h2>
+[<a href="http://symfony.com/doc/current/templating.html" target="_blank">Doc Link</a>]
     <ol>
         <li></li>
     </ol>
 </li>
+
+
+<li><h2>Configuration</h2>
+[<a href="http://symfony.com/doc/current/configuration.html" target="_blank">Doc Link</a>]
+    <ol>
+        <li></li>
+    </ol>
+</li>
+
+
 
 </ol>
