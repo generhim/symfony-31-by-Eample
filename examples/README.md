@@ -25,19 +25,23 @@ The following example is based upon the documentation that is found on the symfo
                 <li>$ cd my_project_name/</li>
                 <li>$ composer update</li>
                 <li>$ bin/console security:check (to check for dependency vulnerabilities</li>
+                <li><strong style="color:red">NEEDS TO BE WRITABLE:</strong> chmod -R 777 {my_project_name}/var/cache/</li>
+                <li><strong style="color:red">NEEDS TO BE WRITABLE:</strong> chmod -R 777 {my_project_name}/var/logs/</li>
             </ol>
         </li>
 
         <li><strong>Other setup options</strong>
             <ol>
-                <li><a href="https://github.com/symfony/symfony-demo" target="_blank">Symfony Demo Application</a> This is a fully-functional application that shows the recommended way to develop Symfony applications. The app has been conceived as a learning tool for Symfony newcomers and its source code contains tons of comments and helpful notes.</li>
+                <li><strong><a href="https://github.com/symfony/symfony-demo" target="_blank">Symfony Demo Application</a></strong> - This is a fully-functional application that shows the recommended way to develop Symfony applications. The app has been conceived as a learning tool for Symfony newcomers and its source code contains tons of comments and helpful notes.</li>
+                <li><strong><a href="https://github.com/symfony-cmf/standard-edition" target="_blank">The Symfony CMF Standard Edition</a></strong> - The Symfony CMF is a project that helps make it easier for developers to add CMS functionality to their Symfony applications. This is a starting project containing the Symfony CMF.</li>
+                <li><strong><a href="https://github.com/gimler/symfony-rest-edition" target="_blank">The Symfony REST Edition</a></strong> - Shows how to build an application that provides a RESTful API using the FOSRestBundle and several other related Bundles.</li>
             </ol>
         </li>
 
 
         <li><strong>Running the new Symfony app:</strong>
             <ol>
-                <li>php bin/conslue server:run (to run the php server)</li>
+                <li>php bin/console server:run (to run the php server)</li>
                 <li>Control + C (to quit the php server)</li>
             </ol>
         </li>
