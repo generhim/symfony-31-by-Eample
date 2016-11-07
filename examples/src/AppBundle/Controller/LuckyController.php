@@ -16,7 +16,9 @@
     use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
     use Symfony\Component\HttpFoundation\Response;
 
-    class LuckyController
+    // we are now extending the Controller base class to make the twig templating language available.
+    // otherwise we will throw an error because $this->render() function will not be identified by the app.
+    class LuckyController extends Controller
     {
         /**
          * @Route("/lucky/number")
@@ -38,9 +40,11 @@
         {
             $number = mt_rand(0, 100);
 
-            return new Response(
-                '<html><body>Lucky number: '.$number.'</body></html>'
-            );
+            // this twig template is saved in the {my_app}/app/Resources/views/lucky/ directory...
+            return $this->render('lucky/twig_number.html.twig', array(
+                    'number' => $number,
+                )
+            ); // end of $this->render
         }
 
     }
