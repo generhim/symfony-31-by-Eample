@@ -1,7 +1,14 @@
 examples
 ========
 
-A Symfony project created on November 5, 2016, 4:53 am.
+The purpose of this README.md is to give a more concise checklist of all the different parts of Symfony covered by their official documentation. <br/>
+
+Why?
+
+<ol>
+<li>Because I believe that having a working example is far more instructive than simply reading documentation. When we see that actual code is working in an app we know that the documentation provided has a much higher probability of being reliable as a reference source.</li>
+<li>There is a lot of information in the current Symfony Documentation. The purpose here is to make a checklist (of sorts) for people whom have already read the documentation and want a quick reference/refresher course.</li>
+</ol>
 
 <h1>Checklist</h1>
 The following example is based upon the documentation that is found on the symfony site:
@@ -25,8 +32,12 @@ The following example is based upon the documentation that is found on the symfo
                 <li>$ cd my_project_name/</li>
                 <li>$ composer update</li>
                 <li>$ bin/console security:check (to check for dependency vulnerabilities</li>
-                <li><strong style="color:red">NEEDS TO BE WRITABLE:</strong> chmod -R 777 {my_project_name}/var/cache/</li>
-                <li><strong style="color:red">NEEDS TO BE WRITABLE:</strong> chmod -R 777 {my_project_name}/var/logs/</li>
+                <li><strong>IMPORTANT!</strong> The following directories need to be writable by the system in order to save the cache and logs. If not the app will halt. If you can not fix the permissions of the app to work within the web server and simply working on a dev environment you can sometimes just chmod both directories recursively to 777. However that is just a band aid and should be discouraged.
+                    <ol>
+                        <li>{my_project_name}/var/cache/</li>
+                        <li>{my_project_name}/var/logs/</li>
+                    </ol>
+                </li>
             </ol>
         </li>
 
