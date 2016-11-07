@@ -94,6 +94,17 @@ The following example is based upon the documentation that is found on the symfo
             </ol>
 
         </li>
+        <li><strong>Checklist of other useful stuff/context</strong><br/>
+            <ol>
+                <li><strong>The Web Debug Toolbar</strong> - very useful. And only visible if you're running the app through the app_dev.php front controller.<br/>For Example:<br/>
+                    http://localhost/symfony31byExample/examples/web/app_dev.php/lucky/number<br/><br/>
+                    The numberAction controller is run through the app_dev.php and therefore we see the toolbar on the bottom of the page.
+                </li>
+                <li><strong>Symfony functionality derives from "bundles." All plugins for Symfony are bundles.</strong></li>
+                <li><strong>Bundles are registered in the {name_of_your_app}/app/AppKernel.php.</strong> Instances of each bundle is instantiated and available from the $bundles array created in the AppKernel.php.</li>
+                <li><strong></strong></li>
+            </ol>
+        </li>
     </ol>
 </li>
 
