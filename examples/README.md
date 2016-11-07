@@ -57,12 +57,14 @@ The following example is based upon the documentation that is found on the symfo
             <a href="http://localhost/symfony31byExample/examples/web/app_dev.php/lucky/number">http://localhost/symfony31byExample/examples/web/app_dev.php/lucky/number</a>
             <img src="https://github.com/generhim/symfony-31-by-Example/blob/master/examples/notes/LuckyController_example.png?raw=true"/><br/>
             (See the actual controller to copy, edit, analyze example.)
-        </li>
-        <li><strong>Checklist:</strong>
-            <ol>
-                <li><strong>Creating the route:</strong> The @Route("/lucky/number") determines the url pattern.
-                <li><strong>Create a controller:</strong> The method -- numberAction() is called a "controller" -- the function where you build the page and ultimately return a Response object. This seems to be kind of bullshit (IMHO) because we are now mixing up the use of the terminology: the class is known as the LuckyCONTROLLER, but the methods are also "controllers"? A rather weird choice by Symfony. But oh well...</li>
+            <ol><strong>Checklist:</strong>
+                            <li><strong>Creating the route:</strong> The @Route("/lucky/number") determines the url pattern.
+                            <li><strong>Create a controller:</strong> The method -- numberAction() is called a "controller" -- the function where you build the page and ultimately return a Response object. This seems to be kind of bullshit (IMHO) because we are now mixing up the use of the terminology: the class is known as the LuckyCONTROLLER, but the methods are also "controllers"? A rather weird choice by Symfony. But oh well...</li>
             </ol>
+        </li>
+        <li>
+
+        </li>
     </ol>
 </li>
 
