@@ -10,22 +10,26 @@
 namespace AppBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\Response;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 
 class RoutingController extends Controller
 {
     /**
      * Matches /routing exactly
+     * i.e. http://localhost/symfony31byExample/examples/web/app_dev.php/routing
      *
      * @Route("/routing", name="routing_list")
      */
     public function listAction()
     {
         // ...
+        return new Response('RoutingController->listAction()');
     }
 
     /**
      * Matches /routing/*
+     * i.e. http://localhost/symfony31byExample/examples/web/app_dev.php/routing/123
      *
      * @Route("/routing/{slug}", name="routing_show")
      */
@@ -35,5 +39,6 @@ class RoutingController extends Controller
         // e.g. at /routing/yay-routing, then $slug='yay-routing'
 
         // ...
+        return new Response('RoutingController->showAction() + $slug param: ' . $slug);
     }
 }

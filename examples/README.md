@@ -124,7 +124,15 @@ The following example is based upon the documentation that is found on the symfo
     <li><strong>Routing Example 1 </strong>
         <ol>
             <li><img src=""/></li>
-            <li></li>
+            <li><strong>Checklist:</strong>
+                <ol>
+                    <li><strong>@Route("/blog", name="blog_list")</strong> - matches /blog exactly.</li>
+                    <li><strong>@Route("/blog/{slug}", name="blog_show")</strong> - matches /blog/*</li>
+                    <li><strong>Placeholders: {thisIsAPlaceholder} are counted as wildcards.</strong> - </li>
+                    <li><strong>Routing can also happen in other formats such as YAML, XML, and PHP.</strong> In these formats the <strong>_controller</strong> defaults values is a special key which tells Symfony which controller to execute when a URL matches the route.</li>
+                    <li><strong>_controller/strong> is known as the <strong>logical name</strong> which points to a specific PHP class and method.</li>
+                </ol>
+            </li>
         </ol>
     </li>
 </ol>
