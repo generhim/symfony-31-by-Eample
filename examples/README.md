@@ -55,7 +55,7 @@ The following example is based upon the documentation that is found on the symfo
             By creating a new controller in: app/src/AppBundle/Controller, we make it available via the web browser.<br/>
             For this example we use the controller, LuckyController.php, then we can go to the web address:<br/>
             <a href="http://localhost/symfony31byExample/examples/web/app_dev.php/lucky/number">http://localhost/symfony31byExample/examples/web/app_dev.php/lucky/number</a>
-            <img src="./notes/LuckyController_example"/><br/>
+            <img src="https://github.com/generhim/symfony-31-by-Example/blob/master/examples/notes/LuckyController_example.png?raw=true"/><br/>
             (See the actual controller to copy, edit, analyze example.)
         </li>
     </ol>
