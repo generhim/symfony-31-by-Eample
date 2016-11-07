@@ -123,7 +123,7 @@ The following example is based upon the documentation that is found on the symfo
     </li>
     <li><strong>Routing Example 1 </strong>
         <ol>
-            <li><img src=""/></li>
+            <li><img src="https://github.com/generhim/symfony-31-by-Example/blob/master/examples/notes/RoutingController_example001.png?raw=true"/></li>
             <li><strong>Checklist:</strong>
                 <ol>
                     <li><strong>@Route("/blog", name="blog_list")</strong> - matches /blog exactly.</li>
