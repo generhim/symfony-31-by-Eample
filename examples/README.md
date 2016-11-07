@@ -51,7 +51,33 @@ The following example is based upon the documentation that is found on the symfo
 <li><h2>Creating Pages</h2>
 [<a href="http://symfony.com/doc/current/page_creation.html" target="_blank">Doc Link</a>]
     <ol>
-        <li></li>
+        <li><strong>Example Controller:</strong><br/>
+            By creating a new controller in: app/src/AppBundle/Controller, we make it available via the web browser.<br/>
+            For this example we use the controller, LuckyController.php, then we can go to the web address:<br/>
+            <a href="http://localhost/symfony31byExample/examples/web/app_dev.php/lucky/number">http://localhost/symfony31byExample/examples/web/app_dev.php/lucky/number</a>
+            <div style="background-color:#FFFFCC">
+                // src/AppBundle/Controller/LuckyController.php
+                namespace AppBundle\Controller;
+
+                use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+                use Symfony\Component\HttpFoundation\Response;
+
+                class LuckyController
+                {
+                    /**
+                     * @Route("/lucky/number")
+                     */
+                     public function numberAction()
+                     {
+                        $number = mt_rand(0, 100);
+
+                            return new Response(
+                                '<html><body>Lucky number: '.$number.'</body></html>'
+                            );
+                        }
+                }
+                </div>
+        </li>
     </ol>
 </li>
 
