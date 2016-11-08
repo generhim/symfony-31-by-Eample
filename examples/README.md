@@ -130,10 +130,12 @@ The following example is based upon the documentation that is found on the symfo
                     <li><strong>@Route("/blog/{slug}", name="blog_show")</strong> - matches /blog/*</li>
                     <li><strong>Placeholders: {thisIsAPlaceholder} are counted as wildcards.</strong> - </li>
                     <li><strong>Routing can also happen in other formats such as YAML, XML, and PHP.</strong> In these formats the <strong>_controller</strong> defaults values is a special key which tells Symfony which controller to execute when a URL matches the route.</li>
-                    <li><strong>_controller/strong> is known as the <strong>logical name</strong> which points to a specific PHP class and method.</li>
+                    <li><strong>_controller</strong> is known as the <strong>logical name</strong> which points to a specific PHP class and method.</li>
                     <li><strong>@Route("/blog/{page}", name="blog_list", requirements={"page": "\d+"})</strong> - Giving {placeholders} default values. In order to do that set up the param requirement in the route and then set the argument in the method with a default value.</li>
-                    <li><strong>With routes, the first param of @Route(), is the url, the secod are defaults, and the third are requirements.</strong> With the defaults and the requirements we pass JSON objects as the key-value pair to sepcify each. See the example below: <br/>
+                    <li><strong>With routes, the first param of @Route(), is the url, the seccod are defaults, and the third are requirements.</strong> With the defaults and the requirements we pass JSON objects as the key-value pair to specify each. See the example below: <br/>
                     <img src="https://github.com/generhim/symfony-31-by-Example/blob/master/examples/notes/RoutingController_example002.png?raw=true"/></li>
+                    <li><h3>Special Routing Parameters</h3>
+
                 </ol>
             </li>
         </ol>

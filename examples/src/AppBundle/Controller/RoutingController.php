@@ -27,11 +27,12 @@ class RoutingController extends Controller
         return new Response('RoutingController->listAction()');
     }
 
+
     /**
      * Matches /routing/*
      * i.e. http://localhost/symfony31byExample/examples/web/app_dev.php/routing/123
      *
-     * @Route("/routing/{slug}", name="routing_show")
+     * @Route("/routing/{slug}", name="routing_show", requirements={"_format":"json"})
      */
     public function showAction($slug)
     {
@@ -40,5 +41,8 @@ class RoutingController extends Controller
 
         // ...
         return new Response('RoutingController->showAction() + $slug param: ' . $slug);
+
+
     }
+
 }
