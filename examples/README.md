@@ -136,8 +136,14 @@ The following example is based upon the documentation that is found on the symfo
                     <img src="https://github.com/generhim/symfony-31-by-Example/blob/master/examples/notes/RoutingController_example002.png?raw=true"/></li>
                     <li><h3>Special Routing Parameters</h3>
 
+                    <li><strong>Routing is "bidirectional."</strong> This means it is also used for generating URLs</li>
                 </ol>
             </li>
+        </ol>
+    </li>
+    <li><strong>Generating URLs</strong><br/>
+        <ol>
+            <li></li>
         </ol>
     </li>
 </ol>
