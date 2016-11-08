@@ -153,7 +153,23 @@ The following example is based upon the documentation that is found on the symfo
 <li><h2>Controllers</h2>
 [<a href="http://symfony.com/doc/current/controller.html" target="_blank">Doc Link</a>]
     <ol>
-        <li></li>
+        <li>A controller reads the information from the Symfony Request object and creates a return Response object. </li>
+        <li>The Response could be HTML, JSON, XML, a file download, a redirect, an 404 error, etc.</li>
+        <li><h2>Some Controller Characteristics</h2>
+            <ol>
+                <li>It uses the namespace</li>
+                <li>It uses the Symfony\Component\HttpFoundation\Response class</li>
+                <li>The controller can be called anything, but should end with "Controller" -- not required but needed by some shortcuts.</li>
+                <li>Each action method must end with "Action"</li>
+                <li>The controller creates a Response object which is returned.</li>
+                <li>Each method makes use of @Route("myUrl");</li>
+            </ol>
+        </li>
+        <li><h2>The Base Controller</h2>
+            <ol>
+                <li>Makes a number of helper methods and the service container array-like object available for use.</li>
+            </ol>
+        </li>
     </ol>
 </li>
 
