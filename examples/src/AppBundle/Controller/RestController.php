@@ -34,8 +34,16 @@ class RestController extends Controller
 
         if($request->isMethod('GET'))
         {
-            $content        = array();
-            $content['pie'] = $request->query->get('pie');
+
+            if($request->query->get('pie'))
+            {
+                $content        = array();
+                $content['pie'] = $request->query->get('pie');
+            }
+            else
+            {
+                $content        = NULL;
+            }
             $response       = array('requestType' => 'GET',     'requestObj' => $request, 'requestContent' => $content);
         }
 
