@@ -59,7 +59,7 @@ class RestController extends Controller
 
         // In case you want to use the JsonResponse class instead. (Preferable)
         return new JsonResponse($response);
-        
+
 
 
     }
